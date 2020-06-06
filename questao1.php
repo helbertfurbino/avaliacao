@@ -6,10 +6,8 @@ $estadoNomes = array_reverse(['São Paulo', 'Rio de Janeiro', 'Minas Gerais', 'E
 $capitais = [];
 
 for ($i = 0; $i < count($estadoSiglas); $i++){
-    $capitais[$i] = [$estadoSiglas[$i] => $estadoNomes[$i]];
+    $capitais[$estadoSiglas[$i]] = $estadoNomes[$i];
 }
-
-
-for ($i = 0; $i < count($capitais); $i++){
-    echo key($capitais[$i]) . " - " . $capitais[$i][key($capitais[$i])] . "<br>";
+foreach ($capitais as $key => $capital){
+    echo $key . " - " . $capital . "<br>";
 }
