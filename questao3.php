@@ -41,7 +41,7 @@ class questao3 {
 	$this->numero3 = $numero3;
     }
 
-    public function mutiplicaAtributos() {
+    public function multiplicaAtributos() {
 	return $this->numero1 * $this->numero2 * $this->numero3;
     }
 }
@@ -52,4 +52,4 @@ $objeto->setNumero1(20);
 $objeto->setNumero2(30);
 $objeto->setNumero3(40);
 
-echo $objeto->mutiplicaAtributos();
+echo $objeto->multiplicaAtributos();
